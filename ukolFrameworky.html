@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ZOO na Marsu</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <style>
+    body { background-color: #ffe0d2; }
+    .hero.is-danger { background-color: #c0392b; }
+    .button.is-mars-action { background-color: #d35400; color: #fff; border: none; transition: background-color 0.3s; }
+    .button.is-mars-action:hover { background-color: #e67e22; color: #fff; border: none; }
+  </style>
+</head>
+<body>
+
+  <!-- Hlavička (Hero component) -->
+  <section class="hero is-danger is-medium" id="uvod" style="background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://news.mit.edu/sites/default/files/images/202409/MIT-MissMars-01-press.jpg') center/cover;">
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <h1 class="title is-1 has-text-white mb-4">
+          ZOO na Marsu
+        </h1>
+        <p class="subtitle is-3 has-text-light">
+          První mimozemská zoologická zahrada s jedinečnou atmosférou
+        </p>
+        <a href="#vstupenky" class="button is-mars-action is-medium is-rounded mt-4">Koupit vstupenky</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hlavní obsah -->
+  <section class="section" id="zvirata">
+    <div class="container">
+      <div class="content has-text-centered mb-6">
+        <h2 class="title is-2">Vítejte na Rudé planetě</h2>
+        <p class="is-size-5">Navštivte naši unikátní expozici marťanské fauny. Zaručujeme bezpečný a nezapomenutelný zážitek pod naší moderní klimatizovanou geodetickou kopulí s plným zajištěním kyslíku.</p>
+      </div>
+
+      <!-- Zvířata -->
+      <div class="columns is-multiline">
+        
+        <!-- Zvíře 1 -->
+        <div class="column is-one-third">
+          <div class="card is-flex is-flex-direction-column" style="height: 100%;">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="/MarsCerv.avif" alt="Písečný červ na Marsu">
+              </figure>
+            </div>
+            <div class="card-content is-flex-grow-1">
+              <p class="title is-4">Písečný červ</p>
+              <div class="content">
+                Gigantický červ obývající nekonečné písečné duny v oblasti Valles Marineris. Živí se železným prachem a dokáže vytvořit vibrace cítitelné na kilometry daleko.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Zvíře 2 -->
+        <div class="column is-one-third">
+          <div class="card is-flex is-flex-direction-column" style="height: 100%;">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="https://scienceillustrated.com.au/blog/wp-content/uploads/2011/05/IMG_1823.jpg" alt="Marťanský ještěr">
+              </figure>
+            </div>
+            <div class="card-content is-flex-grow-1">
+              <p class="title is-4">Marťanský ještěr</p>
+              <div class="content">
+                Obrněný plaz s hrubou šupinatou kůží, který dokáže splynout s rudými skalami. Přežije i extrémní výkyvy teplot a živí se podzemními marťanskými lišejníky.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Zvíře 3 -->
+        <div class="column is-one-third">
+          <div class="card is-flex is-flex-direction-column" style="height: 100%;">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="https://www.birdandhike.com/Wildlife/Invert/Ph_Arthropoda/SubP_Chelicerata/Cl_Arachnida/O_Araneae/IO_Araneomorphae/Lycosidae/p-ly/IMG_32306a.jpg" alt="Osminohý kráterový pavouk">
+              </figure>
+            </div>
+            <div class="card-content is-flex-grow-1">
+              <p class="title is-4">Kráterový pavouk</p>
+              <div class="content">
+                Mírumilovný osminohý tvor pletoucí pavučiny z pevných uhlíkových vláken napříč hlubokými krátery. Jeho sítě zachytávají poletující mikrometeority.
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Nová sekce: Mapa a informace -->
+  <section class="section has-background-white-ter" id="mapa">
+    <div class="container">
+      <h2 class="title is-2 has-text-centered mb-6">Kde nás najdete</h2>
+      <div class="columns is-vcentered">
+        <!-- Mapa (Placeholder obrázek) -->
+        <div class="column is-half">
+          <figure class="image" style="max-width: 75%; margin: 0 auto;">
+            <img src="/MarsZoo.png" alt="Mapa povrchu Marsu">
+          </figure>
+        </div>
+        <!-- Informace k mapě -->
+        <div class="column is-half">
+          <div class="content is-large">
+            <h3 class="title is-4">Sektor 4, Valles Marineris</h3>
+            <p>Naše ZOO se nachází v největším systému kaňonů ve sluneční soustavě. Pro veřejnost jsme přístupní přímo z podzemního hyperloopu.</p>
+            <ul>
+              <li><strong>Souřadnice:</strong> 14.1° J, 59.2° Z</li>
+              <li><strong>Doprava:</strong> Hyperloop linka C ze stanice Olympus Mons.</li>
+              <li><strong>Parkování rouverů:</strong> Přetlakové doky A1 až C5 zdarma pro návštěvníky.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Nová sekce: Vstupenky / Formulář -->
+  <section class="section" id="vstupenky">
+    <div class="container">
+      <h2 class="title is-2 has-text-centered mb-5">Rezervace vstupenek</h2>
+      <div class="columns is-centered">
+        <div class="column is-half">
+          <form class="box">
+            <div class="field">
+              <label class="label">Jméno a příjmení (Pozemšťan)</label>
+              <div class="control">
+                <input class="input is-link" type="text" placeholder="např. Jan Novák">
+              </div>
+            </div>
+            <div class="columns">
+              <div class="column is-half">
+                <div class="field">
+                  <label class="label">Počet osob</label>
+                  <div class="control">
+                    <div class="select is-fullwidth">
+                      <select>
+                        <option>1 (Cestuji sám)</option>
+                        <option>2 (Pár)</option>
+                        <option>3 - 4 (Rodina)</option>
+                        <option>5 a více (Skupina)</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="column is-half">
+                <div class="field">
+                  <label class="label">Datum letu</label>
+                  <div class="control">
+                    <input class="input" type="date">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="field">
+              <label class="checkbox">
+                <input type="checkbox">
+                Souhlasím s rizikem dekomprese a marťanskými podmínkami.
+              </label>
+            </div>
+            <div class="control mt-5">
+              <button class="button is-mars-action is-large is-fullwidth has-text-weight-bold">Odeslat rezervaci</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Patička -->
+  <footer class="footer has-background-dark has-text-white-ter p-4">
+    <div class="content has-text-centered">
+      <p class="m-0">
+        <strong>ZOO na Marsu</strong> &copy; 2026. Nezapomeňte si přetlakové obleky.
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
